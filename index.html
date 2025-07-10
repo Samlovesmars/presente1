@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Are you the one?</title>
+  <link rel="stylesheet" href="css/gate.css" />
+</head>
+<body>
+  <div class="gate-container">
+    <h1>Digite seu nome abaixo!</h1>
+    <p>(Só uma pessoa é autorizada!!)</p>
+
+    <input type="text" id="nameInput" placeholder="Digite aqui..." />
+    <button onclick="checkName()">Check</button>
+
+    <div id="loading" class="loading-screen hidden">
+        <p>Carregando presente<span id="dots"></span></p>
+      </div>      
+           
+    <p id="result"></p>
+  </div>
+
+  <div class="night-sky">
+    <div class="wave wave1">
+      <div class="streak"></div>
+    </div>
+    <div class="wave wave2">
+      <div class="streak"></div>
+    </div>
+    <div class="wave wave3">
+      <div class="streak"></div>
+    </div>
+    <div class="shooting-star">
+        <div class="star-head"></div>
+      </div>
+      
+  </div>
+  <!-- HTML: Montanhas com camadas e neve no topo das mais próximas -->
+<div class="mountains">
+    <!-- Camadas mais distantes -->
+    <div class="mountain layer4"></div>
+    <div class="mountain layer3"></div>
+  
+    <!-- Aurora Boreal entre as montanhas -->
+    <div class="aurora">
+      <div class="wave wave1"><div class="streak"></div></div>
+      <div class="wave wave2"><div class="streak"></div></div>
+      <div class="wave wave3"><div class="streak"></div></div>
+    </div>
+  
+  </div>
+  
+  </div>  
+
+  <script src="js/scriptint.js"></script>
+</body>
+</html>
